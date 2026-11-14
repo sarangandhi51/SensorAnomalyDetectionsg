@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sensor Anomaly Detection Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f5f9;
+            margin: 30px;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #174a7e;
+        }
+        h2 {
+            color: #174a7e;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background: #174a7e;
+            color: white;
+        }
+        .normal { color: green; font-weight: bold; }
+        .warning { color: orange; font-weight: bold; }
+        .anomaly { color: red; font-weight: bold; }
+        .box {
+            background: white;
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Sensor Anomaly Detection System</h1>
+
+<div class="box">
+    <h2>1. Project Overview</h2>
+    <p>This project detects abnormal sensor readings using Java.
+    It checks temperature, humidity and pressure values and classifies
+    them as Normal, Warning or Anomaly.</p>
+</div>
+
+<div class="box">
+    <h2>2. Sensor Thresholds</h2>
+    <table>
+        <tr><th>Sensor</th><th>Normal Range</th><th>Warning</th><th>Anomaly</th></tr>
+        <tr><td>Temperature</td><td>20–40</td><td>Above 40 to 50</td><td>Below 20 or above 50</td></tr>
+        <tr><td>Humidity</td><td>30–60</td><td>Above 60 to 75</td><td>Below 30 or above 75</td></tr>
+        <tr><td>Pressure</td><td>980–1030</td><td>960–979 or 1031–1050</td><td>Below 960 or above 1050</td></tr>
+    </table>
+    <p><small>Note: These are demonstration thresholds.</small></p>
+</div>
+
+<div class="box">
+    <h2>3. Sample Sensor Results</h2>
+    <table>
+        <tr><th>Sensor</th><th>Input</th><th>Status</th></tr>
+        <tr><td>Temperature</td><td>60</td><td class="anomaly">ANOMALY</td></tr>
+        <tr><td>Humidity</td><td>80</td><td class="anomaly">ANOMALY</td></tr>
+        <tr><td>Pressure</td><td>1010</td><td class="normal">NORMAL</td></tr>
+    </table>
+    <h3>Overall Status: <span class="anomaly">ANOMALY</span></h3>
+</div>
+
+<div class="box">
+    <h2>4. Testing Summary</h2>
+    <p>JUnit test cases: 7</p>
+    <p class="normal">Expected result: All 7 tests passed, 0 failures.</p>
+</div>
+
+<div class="box">
+    <h2>5. DevOps Tools</h2>
+    <p>Java – Application development</p>
+    <p>Maven – Build automation</p>
+    <p>Git and GitHub – Version control</p>
+    <p>Jenkins – Continuous Integration</p>
+    <p>JUnit – Unit testing</p>
+</div>
+
+</body>
+</html>
